@@ -1,4 +1,13 @@
-import pygame
+try:
+    import pygame
+    print("Pygame Found")
+except:
+    print("Pygame not Found so installing it")
+    import pip
+    print("imported pip")
+    pip.main(["install", "pygame"])
+    print("Installed pygame")
+    import pygame
 import classes
 
 # init
